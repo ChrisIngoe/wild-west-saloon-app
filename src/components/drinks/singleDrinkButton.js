@@ -1,3 +1,4 @@
+import React from 'React';
 import DrinkButton from '../common/drinkButton';
 
 const SingleDrinkButton = () => {
@@ -5,8 +6,8 @@ const SingleDrinkButton = () => {
     fetch('https://saloon-api.azurewebsites.net/single')
       .then((res) => res.json())
       .then(
-        (res) => {
-          console.log(res);
+        () => {
+          //console.log(res);
         },
         (error) => {
           this.setState({

@@ -7,6 +7,8 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.5.3",
+    "eslint": "4.15.0",
+    "eslint-plugin-security": "1.4.0",
     "prettier": "^2.1.2",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
@@ -17,6 +19,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint": "eslint . --fix",
+    "lint:watch": "npm run lint -- --watch",
     "prettier-format": "prettier --config .prettierrc.json --write src",
     "prettier-check": "prettier --config .prettierrc.json --check src",
     "test": "react-scripts test",

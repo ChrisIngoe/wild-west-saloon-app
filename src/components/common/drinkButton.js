@@ -1,3 +1,5 @@
+import React from 'React';
+import PropTypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
 import './drinkButton.css';
 
@@ -7,6 +9,11 @@ const DrinkButton = ({ label, clickHandler }) => {
       {label}
     </Button>
   );
+};
+
+DrinkButton.propTypes = {
+  label: PropTypes.string.isRequired,
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default DrinkButton;

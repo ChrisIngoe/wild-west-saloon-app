@@ -1,3 +1,4 @@
+import React from 'React';
 import bgImage from './saloon.jpg';
 import './App.css';
 import SingleDrinkButton from './components/drinks/singleDrinkButton';
