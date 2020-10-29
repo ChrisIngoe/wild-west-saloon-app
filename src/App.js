@@ -6,10 +6,10 @@ import BottleDrinkButton from './components/drinks/bottleDrinkButton';
 
 function App() {
   return (
-    <div className="App" style={{ backgroundImage:`url(${bgImage})` }}>
-      <SingleDrinkButton/>
-      <DoubleDrinkButton/>
-      <BottleDrinkButton/>
+    <div className='App' style={{ backgroundImage: `url(${bgImage})` }}>
+      <SingleDrinkButton />
+      <DoubleDrinkButton />
+      <BottleDrinkButton />
     </div>
   );
 }
