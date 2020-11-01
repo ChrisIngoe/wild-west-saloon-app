@@ -1,13 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import DrinkButton from '../common/drinkButton';
 
-const SingleDrinkButton = () => {
+const SingleDrinkButton = ({setDrink}) => {
   const getDrinkHandler = () => {
     fetch('https://saloon-api.azurewebsites.net/single')
       .then((res) => res.json())
       .then(
-        () => {
-          //console.log(res);
+        (res) => {
+          setDrink(res.name);
         },
         (error) => {
           this.setState({
@@ -18,6 +19,10 @@ const SingleDrinkButton = () => {
       );
   };
   return <DrinkButton clickHandler={getDrinkHandler} label='Single' />;
+};
+
+SingleDrinkButton.propTypes = {
+  setDrink: PropTypes.func.isRequired
 };
 
 export default SingleDrinkButton;
