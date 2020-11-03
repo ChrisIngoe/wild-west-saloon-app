@@ -5,7 +5,7 @@ import './drinkButton.css';
 
 const DrinkButton = ({ label, clickHandler }) => {
   return (
-    <Button id='drink-button' onClick={clickHandler}>
+    <Button className='drink-button' onClick={clickHandler}>
       {label}
     </Button>
   );
