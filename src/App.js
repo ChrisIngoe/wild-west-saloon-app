@@ -22,7 +22,6 @@ function App() {
       <SingleDrinkButton setDrink={setNewDrink}/>
       <DoubleDrinkButton setDrink={setNewDrink}/>
       <BottleDrinkButton setDrink={setNewDrink}/>
-      <BottleDrinkButton setDrink={setNewDrink}/>
     </div>
   );
 }
